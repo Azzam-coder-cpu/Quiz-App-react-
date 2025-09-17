@@ -88,7 +88,7 @@ const Quiz = () => {
 
   // Score
   const score = submitted
-    ? answers.reduce((acc, ans, i) => {
+    ? answers.reduce((acc: any, ans, i) => {
         if (
           ans !== null &&
           questions[i].options[ans] === questions[i].correctAnswer
